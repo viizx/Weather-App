@@ -1,4 +1,16 @@
-const key = "jQvfk889Ka1WanaP47ELZlMDy3zU4PWm";
+const key = "4VzMJ53cSSbA7vhKQQ47Ge5CTAKsIUZG";
+
+//get Forecast
+
+const getForecast = async (id) => {
+  const base = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/";
+  const query = `${id}?apikey=${key}&metric=true`;
+
+  const response = await fetch(base + query);
+  const data = await response.json();
+
+  return data;
+};
 
 // get Weather info
 
@@ -13,6 +25,7 @@ const getWeather = async (id) => {
 };
 
 // get City info
+
 const getCity = async (city) => {
   const base = "http://dataservice.accuweather.com/locations/v1/cities/search";
   const query = `?apikey=${key}&q=${city}`;
@@ -23,10 +36,11 @@ const getCity = async (city) => {
   return data[0];
 };
 
-// getCity('Split')
-//     .then(data => {f
-//         return getWeather(data.Key)
-//     }).then(data => {
-//         console.log(data)
-//     })
-//     .catch(err => console.log(err))
+// getCity("Split")
+//   .then((data) => {
+//     return getWeather(data.Key), getForecast(data.Key);
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((err) => console.log(err));

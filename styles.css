@@ -7,10 +7,58 @@ body {
   max-width: 400px;
 }
 
+.row {
+  align-items: center;
+}
+.col {
+  align-items: center;
+  align-content: flex-start;
+}
+
 .icon {
   position: relative;
   top: -50px;
   border-radius: 50%;
   width: 100px;
   margin-bottom: -50px;
+}
+
+.icon0 {
+  position: relative;
+  border-radius: 50%;
+  width: 100px;
+  vertical-align: middle;
+  transform: scale(0.6);
+}
+
+.icon1 {
+  position: relative;
+  border-radius: 50%;
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transform: scale(0.6);
+}
+
+.icon2 {
+  position: relative;
+  border-radius: 50%;
+  width: 100px;
+  margin: 10px;
+  transform: scale(0.6);
+}
+
+.icon3 {
+  position: relative;
+  border-radius: 50%;
+  width: 100px;
+  margin: 10px;
+  transform: scale(0.6);
+}
+.icon4 {
+  position: relative;
+  border-radius: 50%;
+  width: 100px;
+  margin: 10px;
+  transform: scale(0.6);
 }
