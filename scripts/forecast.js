@@ -1,4 +1,4 @@
-const key = "4VzMJ53cSSbA7vhKQQ47Ge5CTAKsIUZG";
+const key = "sSS8x5uIngONGXHVeptt1Z7OZD0lYmjy";
 
 //get Forecast
 
